@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="home.html" class="logo"> <i class="fas fa-shopping-basket"></i> thực phẩm sạch </a>
+
+        <nav class="navbar">
+            <a href="home.html">Trang chủ</a>
+            <a href="shop.html">cửa hàng</a>
+            <a href="about.html">chúng tôi</a>
+            <a href="review.html">đánh giá</a>
+            <a href="blog.html">bài viết</a>
+            <a href="contact.html">liên hệ</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" placeholder="tìm kiếm " id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/cart-1.jpg" alt="">
+                <div class="content">
+                    <h3>sản phẩm</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">22.000vnd</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/cart-2.jpg" alt="">
+                <div class="content">
+                    <h3>sản phẩm</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">22.000vnd</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="image/cart-3.jpg" alt="">
+                <div class="content">
+                    <h3>sản phẩm</h3>
+                    <span class="quantity">1</span>
+                    <span class="multiply">x</span>
+                    <span class="price">22.000vnd</span>
+                </div>
+            </div>
+            <h3 class="total"> total : <span>66.000 vnđ</span> </h3>
+            <a href="#" class="btn">thanh toán</a>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>login form</h3>
+            <input type="email" placeholder="nhập email vào đây" class="box">
+            <input type="password" placeholder="nhập password" class="box">
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">nhớ đăng nhập</label>
+            </div>
+            <input type="submit" value="đăng nhập" class="btn">
+            <p>quên mật khẩu? <a href="#">nhấn vào đây</a></p>
+            <p>không có tài khoản? <a href="#">tạo</a></p>
+        </form>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <section class="home">
+
+        <div class="slides-container">
+
+            <div class="slide active">
+                <div class="content">
+                    <span>thực phẩm sạch</span>
+                    <h3>giảm giá cực sốc</h3>
+                    <a href="#" class="btn" onclick="move()">cửa hàng ngay</a>
+                </div>
+                <div class="image">
+                    <img src="image/home-img-1.png" alt="">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="content">
+                    <span>thực phẩm sạch</span>
+                    <h3>giảm giá cực sốc</h3>
+                    <a href="#" class="btn" onclick="move()">cửa hàng ngay </a>
+                </div>
+                <div class="image">
+                    <img src="image/home-img-2.png" alt="">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="content">
+                    <span>thực phẩm sạch</span>
+                    <h3>giảm giá cực sốc</h3>
+                    <a href="#" class="btn" onclick="move()">cửa hàng ngay</a>
+                </div>
+                <div class="image">
+                    <img src="image/home-img-3.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="next-slide" class="fas fa-angle-right" onclick="next()"></div>
+        <div id="prev-slide" class="fas fa-angle-left" onclick="next()"></div>
+
+    </section>
+
+    <section class="banner-container">
+
+        <div class="banner">
+            <img src="image/banner-1.jpg" alt="">
+            <div class="content">
+                <span>giới hạn</span>
+                <h3>giảm giá 50%</h3>
+                <a href="#" class="btn" onclick="move()">cửa hàng ngay</a>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="image/banner-2.jpg" alt="">
+            <div class="content">
+                <span>chương trình khuyến mãi</span>
+                <h3>giảm 40% </h3>
+                <a href="#" class="btn" onclick="move()">cửa hàng ngay</a>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="image/banner-3.jpg" alt="">
+            <div class="content">
+                <span>chương trình khuyến mãi</span>
+                <h3>giảm 40% </h3>
+                <a href="#" class="btn" onclick="move()">cửa hàng ngay</a>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>link website</h3>
+                <a href="home.html"> <i class="fas fa-arrow-right"></i> trang chủ</a>
+                <a href="shop.html"> <i class="fas fa-arrow-right"></i> cửa hàng</a>
+                <a href="about.html"> <i class="fas fa-arrow-right"></i> chúng tôi</a>
+                <a href="review.html"> <i class="fas fa-arrow-right"></i> đánh giá</a>
+                <a href="blog.html"> <i class="fas fa-arrow-right"></i> bài viết</a>
+                <a href="contact.html"> <i class="fas fa-arrow-right"></i>liên hệ</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> danh sách đặt </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> danh sách ưa thích </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> danh sách mong ước </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> tài khoản của tôi </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> chính sách của chúng tôi </a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+                <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+            </div>
+
+            <div class="box">
+                <h3>thư mới</h3>
+                <p>đăng ký để nhận thông tin mới nhất</p>
+                <form action="">
+                    <input type="email" placeholder="nhập email">
+                    <input type="submit" value="đăng ký" class="btn">
+                </form>
+                <img src="image/payment.png" class="payment" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="credit">created by Phạm quốc bảo | all rights reserved!</section>
+
+    <!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- custom css file link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
